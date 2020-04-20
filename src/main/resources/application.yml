@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8762
+spring:
+  application:
+    name: eshop-product-service
+  datasource:
+    type: com.mysql.cj.jdbc.MysqlConnectionPoolDataSource
+    platform: mysql
+    url: jdbc:mysql://192.168.1.101:3306/eshop
+    username: root
+    password: lll1988
+  rabbitmq:
+    host: 192.168.1.101
+    port: 5672
+    username: rabbitadmin
+    password: lll1988
